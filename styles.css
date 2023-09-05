@@ -35,8 +35,6 @@ header nav ul {
 }
 
 main nav ul {
-    /* font-weight: bold; */
-    list-style-type: none;
     display: block;
 }
 
@@ -46,24 +44,27 @@ main aside nav ul li {
 
 main nav ul ul li {
     font-weight: normal;
-    list-style-type: none;
+    list-style-type: circle;
     margin-left: 15px;
 }
 
 nav a {
     text-decoration: none;
     color: #000000;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 }
-
-table tr td {
-    font-weight: normal;
-}
-
-/* <main><aside><nav><ul><li> */
 
 nav a:hover {
-    color: #f4f4f4;
+    color: #dadada;
+}
+
+.contact-hover {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.contact-hover:hover {
+    color: #dadada;
 }
 
 main {
@@ -73,7 +74,7 @@ main {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: calc(130vh - 160px);
+    height: calc(105vh - 160px);
 }
 
 aside {
@@ -81,9 +82,36 @@ aside {
     margin-right: 20px;
     margin-left: 20px;
 }
+/* --------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid #ddd;
+    /* vertical-align: top;
+    padding: 2px; */
+}
+
+table tr td {
+    font-weight: normal;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
 
 article {
     flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 h3, h2 {
@@ -103,12 +131,12 @@ p, li {
 }
 
 .pictures img {
-    width: 300px;
-    margin-right: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
 }
 
 footer {
-    background-color: #333;
+    background-color: #d4d4d4;
     color: white;
     text-align: center;
     padding: 1rem 0;
