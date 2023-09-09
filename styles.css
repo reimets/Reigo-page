@@ -5,12 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial';
-    /* transition: all 0.3s ease; */
 }
 
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+#portfolio-header {
+    font-size: 2.5em;
+    font-weight: 800;
 }
 
 body {
@@ -28,11 +27,11 @@ header {
 }
 
 header h1 {
-    margin: 0,5rem 0;
+    margin: 0.2rem 0;
 }
 
 header h2 {
-    margin: 1rem;
+    margin: 0.2rem;
 }
 
 header nav ul {
@@ -73,6 +72,8 @@ nav a:hover {
 
 .contact-hover:hover {
     color: #dadada;
+    /* font-size: 1.01em; */
+    /* transition: scale 0.3s ease; */
 }
 
 main {
@@ -83,7 +84,7 @@ main {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: calc(135vh - 160px);
+    height: calc(137vh - 160px);
 }
 
 aside {
@@ -156,7 +157,11 @@ p, li {
     text-decoration: none;
 }
 
-footer {
+.highlight{
+    font-weight: bold;
+}
+
+#portfolio-footer{
     background-color: #d4d4d4;
     color: white;
     text-align: center;
@@ -164,6 +169,13 @@ footer {
     position: bottom;
     bottom: 2;
     width: 100%;
+}
+
+#footer-icons{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 #contact-me {
