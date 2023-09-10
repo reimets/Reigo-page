@@ -1,2 +1,2 @@
 # Reigo-page
-Exercises in SDA
+My profile made in SDA course
